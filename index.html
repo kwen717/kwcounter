@@ -23,6 +23,24 @@
 
     <!-- Use this to quickly test CSS changes in a template,
         then move to project.css -->
+    <style>
+    video#Vid_bg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: url(polina.jpg) no-repeat;
+        background-size: cover; 
+    }
+    </style>
 </head>
 
 <body>
@@ -82,6 +100,10 @@
         </div><!-- /.clock -->
     </div><!-- /.countdown-wrapper -->
 
+    <video autoplay loop poster="polina.jpg" id="Vid_bg">
+        <source src="static/media/polina.webm" type="video/webm">
+        <source src="static/media/polina.mp4" type="video/mp4">
+    </video>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
